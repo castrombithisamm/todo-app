@@ -106,7 +106,7 @@ export function TodoList({ initialTodos }: TodoListProps) {
           />
           <select
             value={filter}
-            onChange={(e) => setFilter(e.target.value as any)}
+            onChange={(e) => setFilter(e.target.value as 'all' | 'completed' | 'incomplete')}
             className="border p-2 rounded"
           >
             <option value="all">All</option>
